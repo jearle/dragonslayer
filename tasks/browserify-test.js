@@ -6,7 +6,7 @@ import glob from 'glob';
 
 export default () => 
 
-  browserify(glob.sync('./test/**/*.js'), { paths: ['./lib'] })
+  browserify(glob.sync('./test/**/*.js'), { paths: ['./lib'], debug: true })
     .transform(['babelify'])
     .exclude('../shims/window')
     .require('./shims/browser-window', { expose: '../shims/window' })

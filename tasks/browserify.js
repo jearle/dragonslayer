@@ -5,7 +5,7 @@ import source from 'vinyl-source-stream';
 
 export default () => 
 
-  browserify('./lib/index.js')
+  browserify('./lib/index.js', { debug: true })
     .transform(['babelify'])
     .exclude('../shims/window')
     .require('./shims/browser-window', { expose: '../shims/window' })
