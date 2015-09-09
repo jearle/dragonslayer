@@ -11,6 +11,7 @@
     "chai": "^3.2.0",
     "connect-livereload": "^0.5.3",
     "express": "^4.13.3",
+    "fs-extra": "^0.24.0",
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",

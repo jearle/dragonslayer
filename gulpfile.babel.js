@@ -1,5 +1,6 @@
 
 import gulp from 'gulp';
+import fs from 'fs-extra';
 
 import browserify from './tasks/browserify';
 import browserifyTest from './tasks/browserify-test';
@@ -9,6 +10,8 @@ import compress from './tasks/compress';
 import watch from './tasks/watch';
 import serve from './tasks/serve';
 import liveReload from './tasks/live-reload';
+
+fs.ensureDirSync('./dist');
 
 gulp.task('default', [
   'browserify',
