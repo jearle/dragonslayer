@@ -1,0 +1,23 @@
+{
+  "unused": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "quotmark": "single",
+  "undef": true,
+  "esnext": true,
+
+  "node": true,
+  "browser": true,
+
+  "jquery": true,
+
+  "globals": {
+    "angular": true,
+    "describe": true,
+    "it": true
+  }
+}

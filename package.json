@@ -1,0 +1,52 @@
+{
+  "name": "dragonslayer",
+  "version": "0.0.1",
+  "description": "A build tool for cross platform node development",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "chai": "^3.2.0",
+    "connect-livereload": "^0.5.3",
+    "express": "^4.13.3",
+    "glob": "^5.0.14",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.4.3",
+    "gulp-uglify": "^1.4.0",
+    "jsdom": "^6.3.0",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.3.2",
+    "tiny-lr": "^0.1.6",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "gulp --silent",
+    "node": "babel-node ./index.js",
+    "phantom": "phantomjs ./bundle.js",
+    "test": "NODE_PATH=./lib node_modules/.bin/mocha --color --compilers js:babel/register -R spec --recursive test"
+  },
+  "author": "Jesse Earle",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jearle/dragonslayer.git"
+  },
+  "keywords": [
+    "Node.js",
+    "JavaScript",
+    "Build",
+    "Tool"
+  ],
+  "bugs": {
+    "url": "https://github.com/jearle/dragonslayer/issues"
+  },
+  "homepage": "https://github.com/jearle/dragonslayer#readme"
+}
