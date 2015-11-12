@@ -6,4 +6,4 @@ export default () =>
   gulp
     .watch(
       ['./lib/**/*', './test/**/*'],
-      ['lint', 'test', 'browserify', 'browserify-test', 'compress', 'live-reload']);
+      ['lint', 'test', 'babel', 'browserify', 'browserify-test', 'compress', 'live-reload']);

@@ -10,16 +10,21 @@ import compress from './tasks/compress';
 import watch from './tasks/watch';
 import serve from './tasks/serve';
 import liveReload from './tasks/live-reload';
+import babel from './tasks/babel';
 
 fs.ensureDirSync('./dist');
 
 gulp.task('default', [
+  'lint',
+  'test',
+  'babel',
   'browserify',
   'browserify-test',
   'compress',
   'serve',
   'watch']);
 
+gulp.task('babel', babel);
 gulp.task('browserify', browserify);
 gulp.task('browserify-test', browserifyTest);
 gulp.task('test', test);

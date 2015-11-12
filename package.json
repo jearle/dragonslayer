@@ -4,7 +4,7 @@
   "description": "A build tool for cross platform node development",
   "main": "lib/index.js",
   "devDependencies": {
-    "babel": "^6.0.15",
+    "babel": "^6.1.5",
     "babel-cli": "^6.1.2",
     "babel-core": "^6.1.4",
     "babel-preset-es2015": "^6.1.2",
@@ -17,6 +17,7 @@
     "fs-extra": "^0.24.0",
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
     "gulp-jshint": "^1.11.2",
     "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.4.3",
