@@ -7,7 +7,7 @@ describe('suite', () => {
 
   it('should', () => {
 
-    expect(main()).to.equal('BUNG');
+    expect(main()).to.equal('BUNG!');
     expect(2).to.equal(2);
 
   });
