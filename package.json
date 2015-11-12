@@ -1,11 +1,13 @@
 {
   "name": "dragonslayer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A build tool for cross platform node development",
   "main": "lib/index.js",
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-core": "^5.8.23",
+    "babel": "^6.0.15",
+    "babel-cli": "^6.1.2",
+    "babel-core": "^6.1.4",
+    "babel-preset-es2015": "^6.1.2",
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
     "chai": "^3.2.0",
@@ -28,8 +30,7 @@
   "scripts": {
     "start": "gulp --silent",
     "node": "babel-node ./index.js",
-    "phantom": "phantomjs ./bundle.js",
-    "test": "NODE_PATH=./lib node_modules/.bin/mocha --color --compilers js:babel/register -R spec --recursive test"
+    "test": "NODE_PATH=./lib node_modules/.bin/mocha --color --compilers js:babel-core/register -R spec --recursive test"
   },
   "author": "Jesse Earle",
   "license": "ISC",
